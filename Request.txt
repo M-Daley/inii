@@ -1,0 +1,43 @@
+﻿Discord API Personal Assistant
+
+The client wants a personal assistant on Discord that notifies them when assignments are due and when classes are about to begin. It must provide the link to the Zoom meeting for a course and the link for an assignment so they can be immediately directed to the work. The client wishes all assignments be able to be viewed, editable, deletable and marked for completion. For courses they want to differiante between active and completed courses as well as show all assignments for a given course. They would also like to be able to take notes that can be served as reminders.
+
+Each assignment has an id, course name, assignment type, assignment description, due date, completed, link, reminder check and days remaining. Assignments whose days remaining is less than 0 or marked for completed will not show in search results unless those search features are given a special flag to indicate what type if not all should be showed. The client would like the ability to set a general reminder as well as control a special reminder to that assignment based on a customizable schedule.
+
+Each course has an id, name, time frame, day(s) of the week, zoom link and completion mark. Each course will reminder the user first thing in the morning (adjustable by the client) that they have that class to attend and will again message the user with the zoom link provided 10m (or an increment of 5m adjusted by the user) before the class is about to begin. The client would like the ability to edit the fields of the course as well as view assignments related to the course under a single view option. The client would like the ability to mark the course completed and/or set a time frame for when the course should be completed (e.g., dd/mm or 12 weeks).
+
+Each note has an id, desc, reminder check. The client would like the ability to set the time for a reminder as well as edit reminder descriptions. Possibility to put reminders under specific courses in the future may be requested.
+
+All ids will use a sequential counter to generate a number for each instance of saved object in order to keep identifiers unique and short.
+
+The view for all of the above will be done within Discord Embeds.
+Show all Assignments:
+[Search Request as Title] - [Number of Matches]
+[reminders check] [id] - [course] - [type] - [description] - [days remaining]
+...
+
+Assignment Reminder:
+"Assignment Reminder"
+[id]
+[Type] for [course]
+[description]
+[days remaining] - [due date]
+[Link]
+
+Show all Courses:
+[name] - [days of the week] - [time frame] - [number of assignments]
+...
+
+Show a single Course:
+[id] - [name]
+[days of the week] - [time frame] - [paper emoji][number of assignments remaining]
+[reminder(s) time set]
+[zoom link]
+{Show All Assignments related to this course}
+
+Show all Notes:
+[id] - [reminder] - [description]
+...
+
+Show a single Note:
+[id] - [reminder] - [reminder time set if there is a reminder] - [description]

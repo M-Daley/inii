@@ -1,0 +1,29 @@
+{
+  "name": "inii",
+  "version": "1.0.0",
+  "description": "Personal Assistant Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Daley/inii.git"
+  },
+  "keywords": [
+    "Discord",
+    "PA",
+    "Personal",
+    "Assistant",
+    "Malcom",
+    "Daley",
+    "Inii",
+    "Bot"
+  ],
+  "author": "Malcom Daley<mdaley115@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Daley/inii/issues"
+  },
+  "homepage": "https://github.com/M-Daley/inii#readme"
+}
