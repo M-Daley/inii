@@ -1,0 +1,20 @@
+All documents with exception to index.js are categorized with their file prefix.
+
+Model -> Database Schemas. These include plugins and methods that mongoose documents can use in other file types.
+Parse -> Data Interpreter (user input, database, etc).
+Server -> Logic Controller. Calls scripts according to configuration and event calls. All cross-script
+Event -> Event Listener. Asynchronous functions that emit a message to the server file when a condition has been met. With Exception to AutoIncrement Plugin which must be called before the Schema is exported as a Model
+Config ->  Manages and Stores configuration options the Server refrences.
+
+APP
+|
+|--DB
+|   |-- model
+|   |      |-x assignment
+|   |      |-x course
+|   |      |-x reminder
+|   |      |-x config
+|   |
+|   |-x server     
+|   |-x config
+

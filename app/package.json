@@ -4,7 +4,8 @@
   "description": "Personal Assistant Discord Bot",
   "main": "index.js",
   "scripts": {
-    "test": "node index"
+    "test": "nodemon index",
+    "run": "node index"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,13 @@
   "bugs": {
     "url": "https://github.com/M-Daley/inii/issues"
   },
-  "homepage": "https://github.com/M-Daley/inii#readme"
+  "homepage": "https://github.com/M-Daley/inii#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "mongoose": "^5.10.3",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
